@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Data Qaulity Monitor!</title>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-tokeninput/1.7.0/jquery.tokeninput.js" ></script>
+    
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+</div>
+
+      </header>
+
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+
+
+      <span><%= link "Rules", to: rule_path(@conn, :index), class: "btn btn-default btn-xs" %></span>
+      <span><%= link "Rule Sets", to: rule_set_path(@conn, :index), class: "btn btn-default btn-xs" %></span>
+      <span><%= link "Result", to: result_path(@conn, :index), class: "btn btn-default btn-xs" %></span>
+      <main role="main">
+        <%= render @view_module, @view_template, assigns %>
+      </main>
+
+    </div> <!-- /container -->
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+  
+</html>

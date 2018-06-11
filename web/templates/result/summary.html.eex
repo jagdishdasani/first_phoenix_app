@@ -1,0 +1,30 @@
+<h2>Summary Report for <%= @date  %> </h2>
+
+<table class="table table-striped ">
+  <thead>
+    <tr>
+        <th>Rules Failed</th>
+        <th>Company UID</th>
+        <th>Company Name</th>
+        <th>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for row <- @results do %>
+    <tr>
+      <td><%= row.value %></td>
+      <td><%= row.uid %></td>
+      <td><%= row.company_name %></td>
+      <td><span><%= link "Download CSV", to: result_path(@conn, :download_csv,  
+        Ecto.Date.to_string(Ecto.Date.from_erl row.inserted_at), uid: row.uid), class: "btn btn-default btn-xs" %></span></td>
+    </tr>
+<% end %>
+
+
+</tbody>
+</table>
+<span><%= link "Download CSV", to: result_path(@conn, :download_csv, @date), class: "btn btn-default btn-xs" %></span>
+<span><%= link "Back", to: result_path(@conn, :index) %></span>
+
+

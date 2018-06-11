@@ -1,0 +1,24 @@
+    page_path  GET     /                    DataMonitor.PageController :index
+    rule_path  GET     /rules               DataMonitor.RuleController :index
+    rule_path  GET     /rules/:id/edit      DataMonitor.RuleController :edit
+    rule_path  GET     /rules/new           DataMonitor.RuleController :new
+    rule_path  GET     /rules/:id           DataMonitor.RuleController :show
+    rule_path  POST    /rules               DataMonitor.RuleController :create
+    rule_path  PATCH   /rules/:id           DataMonitor.RuleController :update
+               PUT     /rules/:id           DataMonitor.RuleController :update
+    rule_path  DELETE  /rules/:id           DataMonitor.RuleController :delete
+rule_set_path  GET     /rule_sets           DataMonitor.RuleSetController :index
+rule_set_path  GET     /rule_sets/:id/edit  DataMonitor.RuleSetController :edit
+rule_set_path  GET     /rule_sets/new       DataMonitor.RuleSetController :new
+rule_set_path  GET     /rule_sets/:id       DataMonitor.RuleSetController :show
+rule_set_path  POST    /rule_sets           DataMonitor.RuleSetController :create
+rule_set_path  PATCH   /rule_sets/:id       DataMonitor.RuleSetController :update
+               PUT     /rule_sets/:id       DataMonitor.RuleSetController :update
+rule_set_path  DELETE  /rule_sets/:id       DataMonitor.RuleSetController :delete
+rule_set_path  GET     /run/:id             DataMonitor.RuleSetController :run
+rule_set_path  GET     /companies           DataMonitor.RuleSetController :companies
+ monitor_path  GET     /monitor             DataMonitor.MonitorController :monitor
+ monitor_path  POST    /lookup              DataMonitor.MonitorController :lookup
+ monitor_path  POST    /lookup_live_data    DataMonitor.MonitorController :lookup_live_data
+               *       /sent_emails         Bamboo.EmailPreviewPlug []
+

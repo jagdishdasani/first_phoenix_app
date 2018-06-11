@@ -1,0 +1,48 @@
+<h2>Show rule</h2>
+
+<ul>
+
+  <li>
+    <strong>Mnemonic:</strong>
+    <%= @rule.mnemonic %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @rule.description %>
+  </li>
+
+  <li>
+    <strong>Unit:</strong>
+    <%= @rule.unit %>
+  </li>
+
+  <li>
+    <strong>Can zero:</strong>
+    <%= @rule.can_zero %>
+  </li>
+
+  <li>
+    <strong>Can blank:</strong>
+    <%= @rule.can_blank %>
+  </li>
+
+  <li>
+    <strong>Can negative:</strong>
+    <%= @rule.can_negative %>
+  </li>
+
+  <li>
+    <strong>Min val:</strong>
+    <%= @rule.min_val %>
+  </li>
+
+  <li>
+    <strong>Max val:</strong>
+    <%= @rule.max_val %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: rule_path(@conn, :edit, @rule) %></span>
+<span><%= link "Back", to: rule_path(@conn, :index) %></span>

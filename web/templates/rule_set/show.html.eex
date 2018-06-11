@@ -1,0 +1,37 @@
+<h2>Show rule set</h2>
+
+<ul>
+
+  <li>
+    <strong>Company Sector:</strong>
+    <%= @rule_set.classification.name %>
+  </li>
+
+  <li>
+    <strong>Mnemonics:</strong>
+    <%= Poison.encode! @rule_set.mnemonics %>
+  </li>
+
+  <li>
+    <strong>Frequency:</strong>
+    <%= @rule_set.frequency %>
+  </li>
+
+  <li>
+    <strong>Start year:</strong>
+    <%= @rule_set.start_year %>
+  </li>
+
+  <li>
+    <strong>End year:</strong>
+    <%= @rule_set.end_year %>
+  </li>
+
+ 
+
+  
+
+</ul>
+
+<span><%= link "Edit", to: rule_set_path(@conn, :edit, @rule_set) %></span>
+<span><%= link "Back", to: rule_set_path(@conn, :index) %></span>

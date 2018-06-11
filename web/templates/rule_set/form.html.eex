@@ -1,0 +1,67 @@
+<script>
+    $(document).ready(function(){
+        var classification_id = $('#rule_set_classification_id').val()
+        var classification_name = $('#rule_set_classification_name').val()
+        
+        $("#rule_set_classification_id").tokenInput("/search_code",
+           {
+             queryParam: "keyword",
+             tokenLimit: 1, 
+             theme: 'facebook', 
+             preventDuplicates: true,
+             prePopulate: [ {id: classification_id, name: classification_name}]
+           })
+    });
+
+    
+</script>
+
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+
+  <div class="form-group row">
+    <%=  if length(@changeset.errors) == 0 do %>
+    <%= hidden_input f, :classification_name, value: @rule_set.classification.name 
+    %>
+    <% end %> 
+    <%= label f, :classification_id, class: "control-label" %>
+    <%= text_input f, :classification_id, class: "form-control" %>
+    <%= error_tag f, :classification_id %>
+  </div> 
+
+  
+
+  <div class="form-group row">
+    <%= label f, :mnemonics, class: "control-label" %>
+    <%= multiple_select f, :mnemonics, @mnemonics, class: "form-control"%>
+    <%= error_tag f, :mnemonics %>
+  </div>
+
+  <div class="form-group row">
+    <%= label f, :frequency, class: "control-label" %>
+    <%= select f, :frequency, @frequencies, class: "form-control"%>
+    <%= error_tag f, :frequency %>
+  </div>
+
+  <div class="form-group row">
+    <%= label f, :start_year, class: "control-label" %>
+    <%= select f, :start_year, 1994..2018, class: "form-control"%>
+    <%= error_tag f, :start_year %>
+  </div>
+
+  <div class="form-group row">
+    <%= label f, :end_year, class: "control-label" %>
+    <%= select f, :end_year, 1994..2018, class: "form-control"%>
+    <%= error_tag f, :end_year %>
+  </div>
+
+ 
+  
+  <div class="form-group row">
+    <%= submit "Submit", class: "btn btn-primary" %>
+  </div>
+<% end %>

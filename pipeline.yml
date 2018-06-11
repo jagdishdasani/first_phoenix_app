@@ -1,0 +1,11 @@
+version: 2
+template: "default"
+stages:
+  - alpha
+  - beta
+  - cpat
+options:
+  - db_migration
+notifications:
+  slack:
+    - "cpat-pipeline"

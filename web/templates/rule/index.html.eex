@@ -1,0 +1,43 @@
+
+
+<h2>Mnemonic Rules</h2>
+
+<table class="table table-striped ">
+  <thead>
+    <tr>
+      <th>Mnemonic</th>
+      <th>Description</th>
+      <th>Unit</th>
+      <th>Can zero</th>
+      <th>Can blank</th>
+      <th>Can negative</th>
+      <th>Min val</th>
+      <th>Max val</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for rule <- @rules do %>
+    <tr>
+      <td><%= rule.mnemonic %></td>
+      <td><%= rule.description %></td>
+      <td><%= rule.unit %></td>
+      <td><%= rule.can_zero %></td>
+      <td><%= rule.can_blank %></td>
+      <td><%= rule.can_negative %></td>
+      <td><%= rule.min_val %></td>
+      <td><%= rule.max_val %></td>
+      
+
+      <td class="text-right">
+        <span><%= link "Show", to: rule_path(@conn, :show, rule), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: rule_path(@conn, :edit, rule), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: rule_path(@conn, :delete, rule), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New rule", to: rule_path(@conn, :new) %></span>

@@ -1,0 +1,27 @@
+<h2>Result</h2>
+
+<table class="table table-striped ">
+  <thead>
+    <tr>
+        <th>Rules Failed</th>
+        <th>Company Scanned</th>
+        <th>Date</th>
+        <th>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for row <- @results do %>
+    <tr>
+      <td><%= link row.uid, to: result_path(@conn, :summary, Ecto.Date.to_string(Ecto.Date.from_erl row.inserted_at) ) %></td>
+      <td><%= row.company_name %></td>
+      <td><%= Ecto.Date.from_erl row.inserted_at %></td> 
+      <td><span><%= link "Download CSV", to: result_path(@conn, :download_csv, Ecto.Date.to_string(Ecto.Date.from_erl row.inserted_at)), class: "btn btn-default btn-xs" %></span></td>
+    </tr>
+<% end %>
+  </tbody>
+
+  
+</table>
+
+

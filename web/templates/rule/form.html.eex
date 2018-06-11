@@ -1,0 +1,81 @@
+<script>
+    $(document).ready(function(){
+       var mnemonic_val= $('#rule_mnemonic').val()
+        $("#rule_mnemonic").tokenInput("/search_mnemonic",
+           {
+             queryParam: "keyword",
+             tokenLimit: 1, 
+             theme: 'facebook', 
+             preventDuplicates: true,
+             prePopulate: [ {name: mnemonic_val, id: mnemonic_val}]
+           })
+      });
+</script>
+
+
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= label f, :mnemonic, class: "control-label" %>
+    <%= text_input f, :mnemonic, class: "form-control" %>
+    <%= error_tag f, :mnemonic %>
+  </div> 
+   
+    
+  <div class="form-group">
+    <%= label f, :description, class: "control-label" %>
+    <%= textarea f, :description, class: "form-control" %>
+    <%= error_tag f, :description %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :unit, class: "control-label" %>
+    <%= text_input f, :unit, class: "form-control" %>
+    <%= error_tag f, :unit %>
+  </div>  
+
+  <div class="form-group">
+    <%= checkbox f, :can_zero, class: "form-check-input" %>
+    <%= label f, :can_zero, class: "form-check-label" %>
+    <%= error_tag f, :can_zero %>
+  </div>
+
+
+  <div class="form-group">
+    <%= checkbox f, :can_blank, class: "form-check-input" %>
+    <%= label f, :can_blank, class: "form-check-label" %>
+    <%= error_tag f, :can_blank %>
+  </div>
+
+  <div class="form-group">
+    <%= checkbox f, :can_negative, class: "form-check-input" %>
+    <%= label f, :can_negative, class: "form-check-label" %>
+    <%= error_tag f, :can_negative %>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <%= label f, :min_val, class: "control-label" %>
+      <%= number_input f, :min_val, step: "any", class: "form-control" %>
+      <%= error_tag f, :min_val %>
+   </div>
+    <div class="form-group">
+      <%= label f, :max_val, class: "control-label" %>
+      <%= number_input f, :max_val, step: "any", class: "form-control" %>
+      <%= error_tag f, :max_val %>
+    </div>
+  </div>
+
+
+  
+
+  <div class="form-group">
+    <%= submit "Submit", class: "btn btn-primary" %>
+  </div>
+<% end %>
+

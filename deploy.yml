@@ -1,0 +1,33 @@
+name: data-monitor
+image: image_url
+
+tags:
+  - public
+
+secrets:
+  - type: postgresql
+    db: data-monitor
+
+service:
+  cmd: mix
+  args:
+    - phoenix.server
+  container:
+    count: 1
+    port: 8080
+    memory: 4096
+    cpu: 4000
+
+migrate:
+  cmd: mix
+  args: 
+    - ecto.migrate
+  container:
+    memory: 1024
+
+env:
+  "vault/postgresql-${app}/creds/${role}":
+    DB_USER: username
+    DB_PASSWORD: password
+  "vault/secret/service/${app}":
+    SECRET_KEY_BASE: SECRET_KEY_BASE

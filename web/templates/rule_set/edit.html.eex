@@ -1,0 +1,6 @@
+<h2>Edit rule set</h2>
+
+<%= render "form.html", conn: @conn, changeset: @changeset, classifications: @classifications, mnemonics: @mnemonics, frequencies: @frequencies, rule_set: @rule_set, 
+                        action: rule_set_path(@conn, :update, @rule_set) %>
+
+<span><%= link "Back", to: rule_set_path(@conn, :index) %></span>

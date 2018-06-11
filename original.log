@@ -1,0 +1,216 @@
+commit e101b25161fe34a7505af752d6ccd2d7aa321766
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Thu Jun 7 17:14:08 2018 -0400
+
+    Digest and brunch build changes
+
+commit 926127eb722a80587a7cd44d7059d15ce7e7fd7c
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Thu Jun 7 15:09:14 2018 -0400
+
+    Adding mix digest in dockerfile
+
+commit ce7a2cfce7a1f0edd6742bd141bf79ac4ce2355c
+Author: Nirav Sheth <nirav_sheth@mckinsey.com>
+Date:   Thu Jun 7 14:21:51 2018 -0400
+
+    Add Env
+
+commit 67f7f56d02754d2d4306c5e79c7f55918b9c5756
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Thu Jun 7 11:39:28 2018 -0400
+
+    secrety key
+
+commit cf562fdc32a38e5248f18dad5297147866e62174
+Author: Nirav Sheth <nirav_sheth@mckinsey.com>
+Date:   Wed Jun 6 17:11:32 2018 -0400
+
+    Turn on SSL
+
+commit dd5370b6456c16041b44d14699f2da3327c355a5
+Author: Nirav Sheth <nirav_sheth@mckinsey.com>
+Date:   Wed Jun 6 16:58:20 2018 -0400
+
+    Fix env
+
+commit d8ae5c2d63bc9b4008c64d59bcbc9a4bf6de589f
+Author: Nirav Sheth <nirav_sheth@mckinsey.com>
+Date:   Wed Jun 6 16:34:36 2018 -0400
+
+    Fix Build
+
+commit 7d6ea7cc17e796352b3e5148e72e61539cce1cf1
+Author: Nirav Sheth <nirav_sheth@mckinsey.com>
+Date:   Wed Jun 6 16:32:30 2018 -0400
+
+    Add Env
+
+commit b23a31a52ca100cb3eb3df465706c864d5e5bbd0
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Wed Jun 6 15:55:16 2018 -0400
+
+    DB Seeder added
+
+commit 02fccf7ee21bd718bf7f5d6d1d4eb5e8cfab06b0
+Merge: 15999c2 f9c1f2f
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Wed Jun 6 11:01:02 2018 -0400
+
+    Merge branch 'master' of github.mdl.cloud:cpat/data-monitor
+
+commit 15999c2f31b8bb54d9a1641fa1ca43813ed9d17f
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Wed Jun 6 11:00:09 2018 -0400
+
+    Added consolx
+
+commit f9c1f2f65e0ee69969fab281337e6def137662fd
+Author: Nirav Sheth <nirav_sheth@mckinsey.com>
+Date:   Wed Jun 6 10:56:16 2018 -0400
+
+    Move entry point to deploy.yml
+
+commit cc9d19f97e7424a11a4c6bca07b1573dfcebfc17
+Author: Nirav Sheth <nirav_sheth@mckinsey.com>
+Date:   Wed Jun 6 10:52:50 2018 -0400
+
+    Added DB Variables
+
+commit 1be5f8ae7a94707e03151a19aa0159c943d2b61b
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Tue Jun 5 16:40:26 2018 -0400
+
+    DB Changes
+
+commit 4f53eb3c3f7b8b5961122c1146ef1b2b92c42437
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Mon Jun 4 16:50:07 2018 -0400
+
+    Changes for tokeninput edit
+
+commit e6c5d4bcefc4601a5cbeac1f6ffa818bffe07ca3
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Mon Jun 4 14:00:17 2018 -0400
+
+    Fixes syntax warning
+
+commit 757bee8a1f34657214d6653db4d3588340efa3a0
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Mon Jun 4 12:35:09 2018 -0400
+
+    Percentage and Ratio fixes
+
+commit bfb808b922c73d2c43ad5c6b77bbd1bcbb73bf1f
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Mon Jun 4 12:03:57 2018 -0400
+
+    Updating mix tasks
+
+commit 0593e7db724a2b7dfa58e8f4513a5d46646ee7f1
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Thu May 31 18:02:40 2018 -0400
+
+    Updating Readme
+
+commit 5465d9a8d61eca320314ea446b09c49a52f3630d
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Thu May 31 17:58:46 2018 -0400
+
+    Updating Readme
+
+commit b5d4ab65646ae7d2d0ffdf8cca354901c0fe6d7a
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Thu May 31 17:32:08 2018 -0400
+
+    Data loading task for companies,mnemonics and classification
+
+commit a3a79d570113dc91d552723d938cf95122f87468
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Tue May 29 17:03:15 2018 -0400
+
+    Refactoring and auto complete
+
+commit d5e5c5fd6ac0080ee1e2d0049897036f1331a8d0
+Author: Nirav Sheth <nirav_sheth@mckinsey.com>
+Date:   Thu May 24 16:13:32 2018 -0400
+
+    Compile code as part of build
+
+commit 3bb8dbe404c75302cb882e2d21afcd04995b705f
+Author: Nirav Sheth <nirav_sheth@mckinsey.com>
+Date:   Thu May 24 15:53:59 2018 -0400
+
+    Added pipeline file
+
+commit ac8ded5a64423dc251814e5130c3cd05a99475a9
+Author: Nirav Sheth <nirav_sheth@mckinsey.com>
+Date:   Thu May 24 15:51:27 2018 -0400
+
+    Added notify for deployer
+
+commit 2e864734935b202f06c65e15dd9d2f618a816c31
+Author: Nirav Sheth <nirav_sheth@mckinsey.com>
+Date:   Thu May 24 15:47:37 2018 -0400
+
+    Fix dockerfile
+
+commit 126ebb6ee4f3d18562b2d13fef0bb5551358046e
+Author: Nirav Sheth <nirav_sheth@mckinsey.com>
+Date:   Thu May 24 15:45:32 2018 -0400
+
+    Remove prebuild
+
+commit 6af8d8cb32d7c362cfbb7eac4a6481772b45676a
+Author: Nirav Sheth <nirav_sheth@mckinsey.com>
+Date:   Thu May 24 15:41:13 2018 -0400
+
+    added to gitignore
+
+commit 32f14bba31f9a9bd3bb808c441db3b7cc5e75cec
+Author: Nirav Sheth <nirav_sheth@mckinsey.com>
+Date:   Thu May 24 15:38:17 2018 -0400
+
+    Deployment setup
+
+commit 69a1d645b232989295321f23fa6aa20e9a2c8ee7
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Wed May 23 14:09:26 2018 -0400
+
+    Css for token inputs
+
+commit e5700920f53c19b3a1d9e3d6b52c3211db868f4b
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Wed May 23 14:08:48 2018 -0400
+
+    Ajax implementation for mnemonics and Company sector
+
+commit 2af6ff7eb1339d0f74458ed46c5056f270d0f676
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Mon May 21 11:24:06 2018 -0400
+
+    Refactoring
+
+commit 37b5d45213d5a399760410cd049b9c0a954d718b
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Tue May 8 16:05:12 2018 -0400
+
+    Ordering of mnemonics
+
+commit 55c42c2657ab2c28f81c7825680e1be28e396172
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Tue May 8 15:12:35 2018 -0400
+
+    Refactoring
+
+commit f48a277e5dc35c1246101048157f1398e28efa11
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Mon May 7 15:28:19 2018 -0400
+
+    Adding sector instead company dropdown for ruleset config
+
+commit e0285cdb5f5bfa63972c01e5fa5ca791c086343e
+Author: jagdish-narayan <jay_narayandasani@external.mckinsey.com>
+Date:   Wed May 2 14:38:47 2018 -0400
+
+    first commit
